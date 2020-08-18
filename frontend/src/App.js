@@ -40,7 +40,7 @@ function App() {
   function handleAdd(){
     const requestOptions = {
         method: 'POST',
-        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({ title: 'React POST Request Example', content: 'This is a content example' })
     };
     fetch('/notes/', requestOptions)
